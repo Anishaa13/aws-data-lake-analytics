@@ -35,7 +35,7 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
 ---
 
 ## 📊 Athena Queries  
-Some example queries used in this project (full queries in (athena_queries:/athena-queries.sql)):  
+Some example queries used in this project (full queries in [athena_queries](athena_queries:/athena-queries.sql)):  
 
 -- Sales by category
 SELECT category, SUM(sales) AS total_sales
@@ -52,6 +52,19 @@ ORDER BY order_month;
 
 ---
 
+Logs
+
+Sample logs were saved for transparency:
+
+[athena-query-logs](athena-query-logs.csv)
+ → Query execution results (status, data scanned, S3 output)
+
+[crawler-logs](log-events-viewer-result.csv)
+ → Glue crawler run details (partitions found, schema updates)
+
+ ---
+ 
+## Glue Crawler
 
 This project did not use a Glue ETL script. Instead, we relied on a Glue Crawler, configured to:
 
@@ -61,7 +74,7 @@ Avoid duplicate crawls of existing datasets.
 
 Update the Glue Data Catalog database db_aws-etl-demo.
 
-Configuration is available in crawler_config:/crawler_config.json
+Configuration is available in [crawler_config](crawler_config:/crawler_config.json)
 
 ---
 
@@ -74,7 +87,7 @@ The QuickSight dashboard was created with the following visuals:
 * **Monthly Sales Trend (Line Chart)**
 * **Top Products by Revenue (Table)**
 
-Screenshots: https://github.com/Anishaa13/aws-data-lake-analytics/tree/69a0a61a8446fff883bb35624b110a10b8ba8208/quicksight_dashboards%3A
+[Dashboards](https://github.com/Anishaa13/aws-data-lake-analytics/tree/69a0a61a8446fff883bb35624b110a10b8ba8208/quicksight_dashboards%3A)
 
 ---
 

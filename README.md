@@ -30,12 +30,12 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
    - Query logs captured for monitoring.  
 5. **QuickSight** → Built dashboards using Athena queries to generate insights.  
 
-![Architecture Diagram](etl-architecture.png)
+![Architecture Diagram]((https://github.com/Anishaa13/aws-data-lake-analytics/tree/main/architecture_design%3A))
  
 ---
 
 ## 📊 Athena Queries  
-Some example queries used in this project (full queries in [athena_queries](athena-queries.sql)):  
+Some example queries used in this project (full queries in [athena_queries]([athena-queries.sql](https://github.com/Anishaa13/aws-data-lake-analytics/tree/main/athena_queries%3A))):  
 
 -- Sales by category
 SELECT category, SUM(sales) AS total_sales
@@ -56,10 +56,10 @@ Logs
 
 Sample logs were saved for transparency:
 
-[athena-query-logs](athena-query-logs.csv)
+[athena-query-logs]([athena-query-logs.csv](https://github.com/Anishaa13/aws-data-lake-analytics/tree/main/logs%3A))
  → Query execution results (status, data scanned, S3 output)
 
-[crawler-logs](log-events-viewer-result.csv)
+[crawler-logs]([log-events-viewer-result.csv](https://github.com/Anishaa13/aws-data-lake-analytics/tree/main/logs%3A))
  → Glue crawler run details (partitions found, schema updates)
 
  ---
@@ -74,7 +74,7 @@ Avoid duplicate crawls of existing datasets.
 
 Update the Glue Data Catalog database db_aws-etl-demo.
 
-Configuration is available in [crawler_config](crawler_config.json)
+Configuration is available in [crawler_config]([crawler_config.json](https://github.com/Anishaa13/aws-data-lake-analytics/tree/main/crawler_config%3A))
 
 ---
 

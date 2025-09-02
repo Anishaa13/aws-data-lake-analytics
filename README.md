@@ -30,12 +30,12 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
    - Query logs captured for monitoring.  
 5. **QuickSight** → Built dashboards using Athena queries to generate insights.  
 
-![Architecture Diagram](architecture_design:)
+![Architecture Diagram](architecture_design:/etl-architecture.png)
  
 ---
 
 ## 📊 Athena Queries  
-Some example queries used in this project (full queries in [`/athena_queries`](athena_queries/)):  
+Some example queries used in this project (full queries in (athena_queries:/athena-queries.sql)):  
 
 ```sql
 -- Sales by category
@@ -63,7 +63,7 @@ Avoid duplicate crawls of existing datasets.
 
 Update the Glue Data Catalog database db_aws-etl-demo.
 
-Configuration is available in glue_scripts/crawler_config.json
+Configuration is available in crawler_config:/crawler_config.json
 
 ---
 
@@ -76,11 +76,7 @@ The QuickSight dashboard was created with the following visuals:
 * **Monthly Sales Trend (Line Chart)**
 * **Top Products by Revenue (Table)**
 
-Screenshots:
-![Sales by Category](screenshots/quicksight_sales_by_category.png)
-![Sales by Region](screenshots/quicksight_sales_profit_region.png)
-![Monthly Trend](screenshots/quicksight_monthly_trend.png)
-![Top Products](screenshots/quicksight_top_products.png)
+Screenshots: https://github.com/Anishaa13/aws-data-lake-analytics/tree/69a0a61a8446fff883bb35624b110a10b8ba8208/quicksight_dashboards%3A
 
 ---
 

@@ -74,7 +74,7 @@ Avoid duplicate crawls of existing datasets.
 
 Update the Glue Data Catalog database db_aws-etl-demo.
 
-Configuration is available in [crawler_config](crawler_config:/crawler_config.json)
+Configuration is available in [crawler_config](crawler_config.json)
 
 ---
 

@@ -1,4 +1,4 @@
-````markdown
+
 # 🚀 AWS Data Lake Analytics Project: S3 → Glue → Athena → QuickSight  
 
 ## 📌 Project Overview  
@@ -50,7 +50,6 @@ SELECT order_month, SUM(sales) AS total_sales
 FROM orders_partitioned
 GROUP BY order_month
 ORDER BY order_month;
-````
 
 ---
 

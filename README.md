@@ -56,10 +56,16 @@ ORDER BY order_month;
 
 ---
 
-## 🔧 Glue ETL Script
 
-A sample Glue ETL job was created to clean and store curated data back into S3.
-See full script: [`glue_scripts/etl_orders.py`](glue_scripts/etl_orders.py)
+This project did not use a Glue ETL script. Instead, we relied on a Glue Crawler, configured to:
+
+Scan only new S3 files (incremental crawl).
+
+Avoid duplicate crawls of existing datasets.
+
+Update the Glue Data Catalog database db_aws-etl-demo.
+
+Configuration is available in glue_scripts/crawler_config.json
 
 ---
 

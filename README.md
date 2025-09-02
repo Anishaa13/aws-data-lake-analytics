@@ -37,7 +37,6 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
 ## 📊 Athena Queries  
 Some example queries used in this project (full queries in (athena_queries:/athena-queries.sql)):  
 
-```sql
 -- Sales by category
 SELECT category, SUM(sales) AS total_sales
 FROM orders_partitioned
@@ -102,5 +101,3 @@ Screenshots: https://github.com/Anishaa13/aws-data-lake-analytics/tree/69a0a61a8
 * [AWS Glue Documentation](https://docs.aws.amazon.com/glue/)
 * [Amazon Athena Documentation](https://docs.aws.amazon.com/athena/)
 * [Amazon QuickSight Documentation](https://docs.aws.amazon.com/quicksight/)
-
-```

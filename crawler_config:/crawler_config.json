@@ -1,0 +1,34 @@
+{
+    "Name": "orders-project-demo",
+    "Role": "AWSGlueServiceRole-orders",
+    "DatabaseName": "db_aws-etl-demo",
+    "Targets": {
+      "S3Targets": [
+        {
+          "Path": "s3://demo-etl-project1/orders/",
+          "Exclusions": [
+            "**/old/*",
+            "**/temp/*"
+          ]
+        }
+      ]
+    },
+    "Schedule": null,
+    "SchemaChangePolicy": {
+      "UpdateBehavior": "UPDATE_IN_DATABASE",
+      "DeleteBehavior": "DEPRECATE_IN_DATABASE"
+    },
+    "RecrawlPolicy": {
+      "RecrawlBehavior": "CRAWL_NEW_FOLDERS_ONLY"
+    },
+    "TablePrefix": "",
+    "Configuration": {
+      "Version": 1.0,
+      "CrawlerOutput": {
+        "Partitions": {
+          "AddOrUpdateBehavior": "InheritFromTable"
+        }
+      }
+    }
+  }
+  

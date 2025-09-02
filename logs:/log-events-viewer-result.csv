@@ -1,0 +1,9 @@
+timestamp,message
+1755760294383,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] BENCHMARK : Running Start Crawl for Crawler orders-project-demo
+1755760325371,"[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] BENCHMARK : Classification complete, writing results to database db_aws-etl-demo"
+1755760325387,"[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] INFO : Crawler configured with Configuration {""Version"":1.0,""CreatePartitionIndex"":true} and SchemaChangePolicy {""UpdateBehavior"":""LOG"",""DeleteBehavior"":""LOG""}. Note that values in the Configuration override values in the SchemaChangePolicy for S3 Targets."
+1755760337458,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] INFO : Created partitions with values [[2017-01-02]] for table orders in database db_aws-etl-demo
+1755760338168,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] BENCHMARK : Finished writing to Catalog
+1755760338188,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] INFO : Run Summary For PARTITION:
+1755760338188,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] INFO : ADD: 1
+1755760410448,[53ebc59a-4fcb-4cc9-b16e-a89bd9581138] BENCHMARK : Crawler has finished running and is in state READY

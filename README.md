@@ -30,10 +30,8 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
    - Query logs captured for monitoring.  
 5. **QuickSight** → Built dashboards using Athena queries to generate insights.  
 
-![Architecture Diagram](screenshots/architecture_diagram.png)
-<img width="685" height="268" alt="AWSWorkflow drawio" src="https://github.com/user-attachments/assets/429bbd8c-6dac-41a2-b786-6ca0df7f05e8" />
+![Architecture Diagram](architecture_design:)
  
-
 ---
 
 ## 📊 Athena Queries  

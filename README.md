@@ -30,12 +30,12 @@ The dataset used is an **orders dataset** (Superstore-style). The goal is to sho
    - Query logs captured for monitoring.  
 5. **QuickSight** → Built dashboards using Athena queries to generate insights.  
 
-![Architecture Diagram](architecture_design:/etl-architecture.png)
+![Architecture Diagram](etl-architecture.png)
  
 ---
 
 ## 📊 Athena Queries  
-Some example queries used in this project (full queries in [athena_queries](athena_queries:/athena-queries.sql)):  
+Some example queries used in this project (full queries in [athena_queries](athena-queries.sql)):  
 
 -- Sales by category
 SELECT category, SUM(sales) AS total_sales
